@@ -5,9 +5,12 @@ chrome.extension.sendMessage({}, function(response) {
 
 		// ----------------------------------------------------------
 		// This part of the script triggers when page is done loading
-		console.log("Hello. This message was sent from scripts/inject.js");
-		// ----------------------------------------------------------
+		var links = $("a");
 
+		for (var link = 0; link < links.length; link++){
+			links[link].href += '&tag=triangleface-20';
+		}
+		// ----------------------------------------------------------
 	}
 	}, 10);
 });
