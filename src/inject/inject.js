@@ -8,7 +8,12 @@ chrome.extension.sendMessage({}, function(response) {
 		var links = $("a");
 
 		for (var link = 0; link < links.length; link++){
-			links[link].href += '&tag=triangleface-20';
+			if (links[link].href.indexOf('?') !== -1){
+				links[link].href += '&tag=triangleface-20';
+			} else {
+				links[link].href += '?tag=triangleface-20';
+			}
+
 		}
 		// ----------------------------------------------------------
 	}
