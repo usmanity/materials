@@ -9,9 +9,9 @@ chrome.extension.sendMessage({}, function(response) {
 
 		for (var link = 0; link < links.length; link++){
 			if (links[link].href.indexOf('?') !== -1){
-				links[link].href += '&tag=triangleface-20';
+				links[link].href += '&tag=micronui-20';
 			} else {
-				links[link].href += '?tag=triangleface-20';
+				links[link].href += '?tag=micronui-20';
 			}
 
 		}
