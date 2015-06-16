@@ -1,6 +1,7 @@
 {
-  "name": "Micron - Minimal Amazon UI",
-  "version": "0.0.5",
+  "name": "Micron - Better UI for Amazon",
+  "short_name": "micron",
+  "version": "0.0.7",
   "manifest_version": 2,
   "description": "A clean and easy to use UI for Amazon",
   "homepage_url": "http://usmanity.com",
